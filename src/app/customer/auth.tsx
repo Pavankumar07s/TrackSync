@@ -7,13 +7,13 @@ import { commonStyles } from '@/styles/commonStyles';
 import CustomText from '@/component/shared/CustomText';
 import CustomButton from '../../component/shared/CustomButton';
 import PhoneInput from '@/component/shared/PhoneInput';
+import { resetAndNavigate } from '@/utils/Helpers';
 
 const Auth = () => {
     const[phone, setPhone] = React.useState('');
 
-    const handleText = () => {
-        // Add your handle logic here
-        console.log('Next button pressed');
+    const handleText = async() => {
+        resetAndNavigate('/customer/home')
     };
     
   return (
